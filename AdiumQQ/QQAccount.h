@@ -16,5 +16,6 @@
 #define KEY_QQ_CONNECT_HOST @"server"
 #define KEY_QQ_CONNECT_PORT @"port"
 #define DEFAULT_PORT @"8000"
+#define QQ_NETWORK_ERROR @"QQNetworkError"
 
 @end

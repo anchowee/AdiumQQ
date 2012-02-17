@@ -12,6 +12,13 @@
 
 @implementation QQAccount
 
+- (void) initAccount {
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(switchServer) 
+                                                 name:QQ_NETWORK_ERROR
+                                               object:nil];
+}
+
 - (const char*) protocolPlugin {
     return "prpl-qq";
 }
@@ -25,15 +32,17 @@
 }
 
 - (void) accountConnectionReportDisconnect:(NSString *)text withReason:(PurpleConnectionError)reason {
-    NSString* server;
-    NSArray* serverList;
-    serverList = [QQService getServerList:[[self preferenceForKey:KEY_QQ_TCP_CONNECT group:GROUP_ACCOUNT_STATUS] boolValue]];
+    if (reason == PURPLE_CONNECTION_ERROR_NETWORK_ERROR) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:QQ_NETWORK_ERROR object:nil];
+    }
     
-    server = [serverList objectAtIndex:(arc4random() % [serverList count])];
-    server = [[server stringByAppendingString:@":"] stringByAppendingString:DEFAULT_PORT];
-    purple_account_set_string(account, 
-                              [KEY_QQ_CONNECT_HOST UTF8String], 
-                              [server UTF8String]);
+    [super accountConnectionReportDisconnect:text withReason:reason];
+}
+
+- (void) switchServer {
+    NSAlert* alert = [[NSAlert alloc] init];
+    alert.messageText = @"QQ network error. Please try selecting a different server in the preferences dialog.";
+    [alert runModal];
 }
 
 @end

@@ -36,11 +36,7 @@
 
 - (void) saveConfiguration {
     [super saveConfiguration];
-    PurpleAccount* purpAcc = NULL;
-    
-    if ([account respondsToSelector:@selector(purpleAccount)]) {
-        purpAcc = [account purpleAccount];
-    }
+    PurpleAccount* purpAcc = [(CBPurpleAccount*)account purpleAccount];
 
     BOOL tcp = [checkBox_tcpConnect state];
     [account setPreference:[NSNumber numberWithInt:tcp] forKey:KEY_QQ_TCP_CONNECT group:GROUP_ACCOUNT_STATUS];
