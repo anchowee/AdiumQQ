@@ -15,5 +15,6 @@
 #define KEY_QQ_TCP_CONNECT @"use_tcp"
 #define KEY_QQ_CONNECT_HOST @"server"
 #define KEY_QQ_CONNECT_PORT @"port"
+#define DEFAULT_PORT @"8000"
 
 @end
