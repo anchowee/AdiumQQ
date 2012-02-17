@@ -112,4 +112,29 @@
 	return baseImage;
 }
 
++ (NSArray*) getServerList:(BOOL)tcp {
+    if (tcp) {
+        return [[[NSArray alloc] initWithObjects:
+                 @"tcpconn.tencent.com",
+                 @"tcpconn2.tencent.com",
+                 @"tcpconn3.tencent.com",
+                 @"tcpconn4.tencent.com",
+                 @"tcpconn5.tencent.com",
+                 @"tcpconn6.tencent.com", 
+                 nil] autorelease];
+    }
+    
+    return [[[NSArray alloc] initWithObjects:                   
+             @"sz.tencent.com",
+             @"sz2.tencent.com",
+             @"sz3.tencent.com",
+             @"sz4.tencent.com",
+             @"sz5.tencent.com",
+             @"sz6.tencent.com",
+             @"sz7.tencent.com",
+             @"sz8.tencent.com",
+             @"sz9.tencent.com", 
+             nil] autorelease];
+}
+
 @end

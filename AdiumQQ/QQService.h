@@ -13,4 +13,6 @@
 
 }
 
++ (NSArray*) getServerList:(BOOL)tcp;
+
 @end
