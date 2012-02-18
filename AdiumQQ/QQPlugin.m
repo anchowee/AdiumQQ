@@ -32,7 +32,7 @@ extern gboolean purple_init_qq_plugin(void);
 }
 
 - (NSString*) pluginVersion {
-    return @"0.5";
+    return @"0.7";
 }
 
 - (NSString*) pluginDescription {

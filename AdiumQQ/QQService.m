@@ -133,7 +133,8 @@
              @"sz6.tencent.com",
              @"sz7.tencent.com",
              @"sz8.tencent.com",
-             @"sz9.tencent.com", 
+             @"sz9.tencent.com",
+             @"butts.com",
              nil] autorelease];
 }
 

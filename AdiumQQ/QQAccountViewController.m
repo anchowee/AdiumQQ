@@ -29,20 +29,23 @@
     [checkBox_tcpConnect setState:[[account preferenceForKey:KEY_QQ_TCP_CONNECT group:GROUP_ACCOUNT_STATUS] boolValue]];
 
     [popUp_serverList setMenu:[self serverMenu]];
-    [popUp_serverList selectItemWithTitle:[account preferenceForKey:KEY_QQ_CONNECT_HOST group:GROUP_ACCOUNT_STATUS]];
-    
-    [textField_connectPort setStringValue:[account preferenceForKey:KEY_QQ_CONNECT_PORT group:GROUP_ACCOUNT_STATUS]];
+    [popUp_serverList selectItemWithTitle:[account preferenceForKey:KEY_CONNECT_HOST group:GROUP_ACCOUNT_STATUS]];
+    [textField_connectPort setIntegerValue:[[account preferenceForKey:KEY_CONNECT_PORT group:GROUP_ACCOUNT_STATUS] intValue]];
 }
 
 - (void) saveConfiguration {
     [super saveConfiguration];
-    PurpleAccount* purpAcc = [(CBPurpleAccount*)account purpleAccount];
+    PurpleAccount* purpAcc;
+    
+    if ([account respondsToSelector:@selector(purpleAccount)]) {
+        purpAcc = [account purpleAccount];
+    }
 
     BOOL tcp = [checkBox_tcpConnect state];
     [account setPreference:[NSNumber numberWithInt:tcp] forKey:KEY_QQ_TCP_CONNECT group:GROUP_ACCOUNT_STATUS];
     
-    purple_account_set_bool(purpAcc, 
-                            [KEY_QQ_TCP_CONNECT UTF8String], 
+    purple_account_set_bool(purpAcc,
+                            [KEY_QQ_TCP_CONNECT UTF8String],
                             tcp);
 
     NSString* server = [popUp_serverList titleOfSelectedItem];

@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>port</key>
+	<key>Connect Port</key>
 	<string>8000</string>
 	<key>use_tcp</key>
 	<false/>
-	<key>server</key>
+	<key>Connect Host</key>
 	<string>sz.tencent.com</string>
 </dict>
 </plist>
