@@ -13,6 +13,7 @@
 }
 
 #define KEY_QQ_TCP_CONNECT @"use_tcp"
+#define KEY_QQ_CONNECT_HOST @"server"
 #define DEFAULT_PORT @"8000"
 #define QQ_NETWORK_ERROR @"QQNetworkError"
 
