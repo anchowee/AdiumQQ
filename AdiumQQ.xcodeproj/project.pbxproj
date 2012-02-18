@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0CFE6014EF7F9900A1844C /* QQCaptchaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0CFE5F14EF7F9900A1844C /* QQCaptchaView.xib */; };
 		BE991A87147E19CB00645C2C /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A86147E19CB00645C2C /* libpurple.framework */; };
 		BE991A89147E1A2000645C2C /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A88147E1A2000645C2C /* libglib.framework */; };
 		BE991BE7147E395700645C2C /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991BE6147E395700645C2C /* AIUtilities.framework */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE0CFE5F14EF7F9900A1844C /* QQCaptchaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQCaptchaView.xib; sourceTree = "<group>"; };
 		BE991A86147E19CB00645C2C /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = "AdiumQQ/libqq-pidgin/libpurple.framework"; sourceTree = "<group>"; };
 		BE991A88147E1A2000645C2C /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = "AdiumQQ/libqq-pidgin/libglib.framework"; sourceTree = "<group>"; };
 		BE991BE6147E395700645C2C /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = "../Library/Developer/Xcode/DerivedData/Adium-foiaivfxnjxhaacxhxhgzladniwj/Build/Products/Debug/AIUtilities.framework"; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				BECEAB6B1486C1850095BC71 /* QQPlugin.m */,
 				BECEAB6C1486C1850095BC71 /* QQService.h */,
 				BECEAB6D1486C1850095BC71 /* QQService.m */,
+				BE0CFE5F14EF7F9900A1844C /* QQCaptchaView.xib */,
 				BEEF064B147DF61500BF67C5 /* Resources */,
 				BECEAB631486BC600095BC71 /* QQAccountView.xib */,
 				BECEAB651486BD650095BC71 /* QQAccountViewController.h */,
@@ -401,6 +404,7 @@
 				BECEAB641486BC600095BC71 /* QQAccountView.xib in Resources */,
 				BEA1654214874FFC009AF31D /* PurpleDefaultsQQ.plist in Resources */,
 				BEDFDA2D148D567800D54BB5 /* QQ.png in Resources */,
+				BE0CFE6014EF7F9900A1844C /* QQCaptchaView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
