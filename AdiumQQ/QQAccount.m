@@ -10,6 +10,8 @@
 #import "QQService.h"
 #include <stdlib.h>
 
+#import <Adium/ESDebugAILog.h>
+
 @implementation QQAccount
 
 - (void) initAccount {
@@ -48,6 +50,12 @@
     [self setPreference:server forKey:KEY_CONNECT_HOST group:GROUP_ACCOUNT_STATUS]  ;
     purple_account_set_string([self purpleAccount], [KEY_QQ_CONNECT_HOST UTF8String], [server UTF8String]);
     [self connect];
+}
+
+- (void) accountConnectionProgressStep:(NSNumber *)step percentDone:(NSNumber *)connectionProgressPrecent {
+    if ([step isEqualToNumber:[NSNumber numberWithInt:2]]) {
+        AILog(@"QQ: OMG WE'RE DOING CAPTCHA THINGS");
+    }
 }
 
 @end
