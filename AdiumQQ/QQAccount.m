@@ -8,7 +8,7 @@
 
 #import "QQAccount.h"
 #import "QQService.h"
-#import <stdlib.h>
+#include <stdlib.h>
 
 @implementation QQAccount
 
@@ -39,10 +39,15 @@
     [super accountConnectionReportDisconnect:text withReason:reason];
 }
 
+/*
+ * On network error, select a different server from the list, and try to connect again.
+ */
 - (void) switchServer {
-    NSAlert* alert = [[NSAlert alloc] init];
-    alert.messageText = @"QQ network error. Please try selecting a different server in the preferences dialog.";
-    [alert runModal];
+    NSArray* servers = [QQService getServerList:[[self preferenceForKey:KEY_QQ_TCP_CONNECT group:GROUP_ACCOUNT_STATUS] boolValue]];
+    NSString* server = [servers objectAtIndex:(arc4random() % [servers count])];
+    [self setPreference:server forKey:KEY_CONNECT_HOST group:GROUP_ACCOUNT_STATUS]  ;
+    purple_account_set_string([self purpleAccount], [KEY_QQ_CONNECT_HOST UTF8String], [server UTF8String]);
+    [self connect];
 }
 
 @end
