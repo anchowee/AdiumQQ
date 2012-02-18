@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0CFE8514EFA91100A1844C /* QQ.AdiumEmoticonset in Resources */ = {isa = PBXBuildFile; fileRef = BE0CFE8414EFA91100A1844C /* QQ.AdiumEmoticonset */; };
 		BE991A87147E19CB00645C2C /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A86147E19CB00645C2C /* libpurple.framework */; };
 		BE991A89147E1A2000645C2C /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A88147E1A2000645C2C /* libglib.framework */; };
 		BE991BE7147E395700645C2C /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991BE6147E395700645C2C /* AIUtilities.framework */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE0CFE8414EFA91100A1844C /* QQ.AdiumEmoticonset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = QQ.AdiumEmoticonset; sourceTree = "<group>"; };
 		BE991A86147E19CB00645C2C /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = "AdiumQQ/libqq-pidgin/libpurple.framework"; sourceTree = "<group>"; };
 		BE991A88147E1A2000645C2C /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = "AdiumQQ/libqq-pidgin/libglib.framework"; sourceTree = "<group>"; };
 		BE991BE6147E395700645C2C /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = "../Library/Developer/Xcode/DerivedData/Adium-foiaivfxnjxhaacxhxhgzladniwj/Build/Products/Debug/AIUtilities.framework"; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 		BEEF064B147DF61500BF67C5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE0CFE8414EFA91100A1844C /* QQ.AdiumEmoticonset */,
 				BEDFDA2C148D567800D54BB5 /* QQ.png */,
 				BEA1654114874FFC009AF31D /* PurpleDefaultsQQ.plist */,
 				BEEF064C147DF61500BF67C5 /* AdiumQQ-Info.plist */,
@@ -401,6 +404,7 @@
 				BECEAB641486BC600095BC71 /* QQAccountView.xib in Resources */,
 				BEA1654214874FFC009AF31D /* PurpleDefaultsQQ.plist in Resources */,
 				BEDFDA2D148D567800D54BB5 /* QQ.png in Resources */,
+				BE0CFE8514EFA91100A1844C /* QQ.AdiumEmoticonset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
