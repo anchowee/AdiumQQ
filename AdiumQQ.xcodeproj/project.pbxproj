@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE0CFE8514EFA91100A1844C /* QQ.AdiumEmoticonset in Resources */ = {isa = PBXBuildFile; fileRef = BE0CFE8414EFA91100A1844C /* QQ.AdiumEmoticonset */; };
-		BE991A87147E19CB00645C2C /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A86147E19CB00645C2C /* libpurple.framework */; };
-		BE991A89147E1A2000645C2C /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A88147E1A2000645C2C /* libglib.framework */; };
-		BE991BE7147E395700645C2C /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991BE6147E395700645C2C /* AIUtilities.framework */; };
 		BEA1654214874FFC009AF31D /* PurpleDefaultsQQ.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEA1654114874FFC009AF31D /* PurpleDefaultsQQ.plist */; };
 		BECEAB641486BC600095BC71 /* QQAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECEAB631486BC600095BC71 /* QQAccountView.xib */; };
 		BECEAB671486BD650095BC71 /* QQAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEAB661486BD650095BC71 /* QQAccountViewController.m */; };
@@ -44,20 +41,20 @@
 		BEE096EB147E43FC00F9A993 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096CA147E43FC00F9A993 /* utils.c */; };
 		BEE096EC147E43FC00F9A993 /* libqq-pidgin-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEE096D0147E43FC00F9A993 /* libqq-pidgin-Info.plist */; };
 		BEE096ED147E43FC00F9A993 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEE096D1147E43FC00F9A993 /* InfoPlist.strings */; };
-		BEE097C6147E44D000F9A993 /* libgmodule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE09769147E44CF00F9A993 /* libgmodule.framework */; };
-		BEE097C7147E44D000F9A993 /* libintl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE0976A147E44CF00F9A993 /* libintl.framework */; };
-		BEE097C8147E44D000F9A993 /* libmeanwhile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE0976B147E44CF00F9A993 /* libmeanwhile.framework */; };
+		BEE3679E1589A31A0098B22D /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3679D1589A31A0098B22D /* Adium.framework */; };
+		BEE367A01589A3270098B22D /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3679F1589A3270098B22D /* AdiumLibpurple.framework */; };
+		BEE367A21589A3570098B22D /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE367A11589A3570098B22D /* AIUtilities.framework */; };
+		BEE367A41589A3F40098B22D /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE367A31589A3F40098B22D /* libpurple.framework */; };
+		BEE367A61589A3FD0098B22D /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE367A51589A3FD0098B22D /* libglib.framework */; };
+		BEE367A81589A4130098B22D /* libmeanwhile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE367A71589A4130098B22D /* libmeanwhile.framework */; };
+		BEE367AA1589A4290098B22D /* libintl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE367A91589A4290098B22D /* libintl.framework */; };
+		BEE367AC1589A43C0098B22D /* libgmodule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE367AB1589A43C0098B22D /* libgmodule.framework */; };
 		BEEF0645147DF61500BF67C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF0644147DF61500BF67C5 /* Cocoa.framework */; };
 		BEEF064F147DF61500BF67C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEEF064D147DF61500BF67C5 /* InfoPlist.strings */; };
-		BEEF0658147DF72A00BF67C5 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF0656147DF72A00BF67C5 /* Adium.framework */; };
-		BEEF0659147DF72A00BF67C5 /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF0657147DF72A00BF67C5 /* AdiumLibpurple.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE0CFE8414EFA91100A1844C /* QQ.AdiumEmoticonset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = QQ.AdiumEmoticonset; sourceTree = "<group>"; };
-		BE991A86147E19CB00645C2C /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = "AdiumQQ/libqq-pidgin/libpurple.framework"; sourceTree = "<group>"; };
-		BE991A88147E1A2000645C2C /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = "AdiumQQ/libqq-pidgin/libglib.framework"; sourceTree = "<group>"; };
-		BE991BE6147E395700645C2C /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = "../Library/Developer/Xcode/DerivedData/Adium-foiaivfxnjxhaacxhxhgzladniwj/Build/Products/Debug/AIUtilities.framework"; sourceTree = "<group>"; };
 		BEA1654114874FFC009AF31D /* PurpleDefaultsQQ.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PurpleDefaultsQQ.plist; sourceTree = "<group>"; };
 		BECEAB631486BC600095BC71 /* QQAccountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQAccountView.xib; sourceTree = "<group>"; };
 		BECEAB651486BD650095BC71 /* QQAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQAccountViewController.h; sourceTree = "<group>"; };
@@ -121,9 +118,14 @@
 		BEE096D2147E43FC00F9A993 /* libqq-pidgin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libqq-pidgin-Prefix.pch"; sourceTree = "<group>"; };
 		BEE096D3147E43FC00F9A993 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BEE096EE147E440B00F9A993 /* libgmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libgmodule.framework; path = "AdiumQQ/libqq-pidgin/libgmodule.framework"; sourceTree = "<group>"; };
-		BEE09769147E44CF00F9A993 /* libgmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libgmodule.framework; path = ../adium/Frameworks/libgmodule.framework; sourceTree = "<group>"; };
-		BEE0976A147E44CF00F9A993 /* libintl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libintl.framework; path = ../adium/Frameworks/libintl.framework; sourceTree = "<group>"; };
-		BEE0976B147E44CF00F9A993 /* libmeanwhile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libmeanwhile.framework; path = ../adium/Frameworks/libmeanwhile.framework; sourceTree = "<group>"; };
+		BEE3679D1589A31A0098B22D /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Adium.framework; sourceTree = "<group>"; };
+		BEE3679F1589A3270098B22D /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdiumLibpurple.framework; sourceTree = "<group>"; };
+		BEE367A11589A3570098B22D /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AIUtilities.framework; sourceTree = "<group>"; };
+		BEE367A31589A3F40098B22D /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libpurple.framework; sourceTree = "<group>"; };
+		BEE367A51589A3FD0098B22D /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libglib.framework; sourceTree = "<group>"; };
+		BEE367A71589A4130098B22D /* libmeanwhile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libmeanwhile.framework; sourceTree = "<group>"; };
+		BEE367A91589A4290098B22D /* libintl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libintl.framework; sourceTree = "<group>"; };
+		BEE367AB1589A43C0098B22D /* libgmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libgmodule.framework; sourceTree = "<group>"; };
 		BEEF0641147DF61400BF67C5 /* AdiumQQ.AdiumLibpurplePlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumQQ.AdiumLibpurplePlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEF0644147DF61500BF67C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BEEF0647147DF61500BF67C5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -132,8 +134,6 @@
 		BEEF064C147DF61500BF67C5 /* AdiumQQ-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdiumQQ-Info.plist"; sourceTree = "<group>"; };
 		BEEF064E147DF61500BF67C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BEEF0650147DF61500BF67C5 /* AdiumQQ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdiumQQ-Prefix.pch"; sourceTree = "<group>"; };
-		BEEF0656147DF72A00BF67C5 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Adium.framework; sourceTree = "<group>"; };
-		BEEF0657147DF72A00BF67C5 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdiumLibpurple.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,14 +142,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEF0645147DF61500BF67C5 /* Cocoa.framework in Frameworks */,
-				BE991A89147E1A2000645C2C /* libglib.framework in Frameworks */,
-				BEE097C6147E44D000F9A993 /* libgmodule.framework in Frameworks */,
-				BEE097C7147E44D000F9A993 /* libintl.framework in Frameworks */,
-				BEE097C8147E44D000F9A993 /* libmeanwhile.framework in Frameworks */,
-				BE991A87147E19CB00645C2C /* libpurple.framework in Frameworks */,
-				BEEF0658147DF72A00BF67C5 /* Adium.framework in Frameworks */,
-				BEEF0659147DF72A00BF67C5 /* AdiumLibpurple.framework in Frameworks */,
-				BE991BE7147E395700645C2C /* AIUtilities.framework in Frameworks */,
+				BEE3679E1589A31A0098B22D /* Adium.framework in Frameworks */,
+				BEE367A01589A3270098B22D /* AdiumLibpurple.framework in Frameworks */,
+				BEE367A21589A3570098B22D /* AIUtilities.framework in Frameworks */,
+				BEE367A41589A3F40098B22D /* libpurple.framework in Frameworks */,
+				BEE367A61589A3FD0098B22D /* libglib.framework in Frameworks */,
+				BEE367A81589A4130098B22D /* libmeanwhile.framework in Frameworks */,
+				BEE367AA1589A4290098B22D /* libintl.framework in Frameworks */,
+				BEE367AC1589A43C0098B22D /* libgmodule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +260,8 @@
 		BEEF0643147DF61400BF67C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BEEF0657147DF72A00BF67C5 /* AdiumLibpurple.framework */,
-				BEEF0656147DF72A00BF67C5 /* Adium.framework */,
+				BEE3679F1589A3270098B22D /* AdiumLibpurple.framework */,
+				BEE3679D1589A31A0098B22D /* Adium.framework */,
 				BEEF0644147DF61500BF67C5 /* Cocoa.framework */,
 				BEEF0646147DF61500BF67C5 /* Other Frameworks */,
 			);
@@ -271,13 +271,13 @@
 		BEEF0646147DF61500BF67C5 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BEE09769147E44CF00F9A993 /* libgmodule.framework */,
-				BEE0976A147E44CF00F9A993 /* libintl.framework */,
-				BEE0976B147E44CF00F9A993 /* libmeanwhile.framework */,
-				BE991A86147E19CB00645C2C /* libpurple.framework */,
+				BEE367AB1589A43C0098B22D /* libgmodule.framework */,
+				BEE367A91589A4290098B22D /* libintl.framework */,
+				BEE367A71589A4130098B22D /* libmeanwhile.framework */,
+				BEE367A51589A3FD0098B22D /* libglib.framework */,
+				BEE367A31589A3F40098B22D /* libpurple.framework */,
+				BEE367A11589A3570098B22D /* AIUtilities.framework */,
 				BEE096EE147E440B00F9A993 /* libgmodule.framework */,
-				BE991BE6147E395700645C2C /* AIUtilities.framework */,
-				BE991A88147E1A2000645C2C /* libglib.framework */,
 				BEEF0647147DF61500BF67C5 /* AppKit.framework */,
 				BEEF0648147DF61500BF67C5 /* CoreData.framework */,
 				BEEF0649147DF61500BF67C5 /* Foundation.framework */,
@@ -478,7 +478,7 @@
 		BEEF0651147DF61500BF67C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
@@ -500,18 +500,19 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libglib.framework/Headers",
 					"$(SRCROOT)/libpurple.framework/Headers",
+					"$(SRCROOT)/libgmodule.framework/Headers",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AdiumQQ/libqq-pidgin/libglib.framework/Headers $(SRCROOT)/libpurple.framework/Headers";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/libglib.framework/Headers $(SRCROOT)/libpurple.framework/Headers $(SRCROOT)/libgmodule.framework/Headers";
 			};
 			name = Debug;
 		};
 		BEEF0652147DF61500BF67C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
@@ -527,10 +528,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libglib.framework/Headers",
 					"$(SRCROOT)/libpurple.framework/Headers",
+					"$(SRCROOT)/libgmodule.framework/Headers",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AdiumQQ/libqq-pidgin/libglib.framework/Headers $(SRCROOT)/libpurple.framework/Headers";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/libglib.framework/Headers $(SRCROOT)/libpurple.framework/Headers $(SRCROOT)/libgmodule.framework/Headers";
 			};
 			name = Release;
 		};
