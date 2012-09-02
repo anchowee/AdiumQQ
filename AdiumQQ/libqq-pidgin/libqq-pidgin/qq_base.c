@@ -415,8 +415,7 @@ void qq_captcha_input_dialog(PurpleConnection *gc,qq_captcha_data *captcha)
 
 	g_return_if_fail(captcha->token != NULL && captcha->token_len > 0);
 	g_return_if_fail(captcha->data != NULL && captcha->data_len > 0);
-    purple_debug_info("QQ", "Should ask for a fucking captcha");
-    
+
 	captcha_req = g_new0(qq_captcha_request, 1);
 	captcha_req->gc = gc;
 	captcha_req->token = g_new0(guint8, captcha->token_len);
@@ -479,8 +478,6 @@ guint8 qq_process_captcha(PurpleConnection *gc, guint8 *data, gint data_len)
 		purple_debug_info("QQ", "Captcha verified, result %d\n", need_captcha);
 		return QQ_LOGIN_REPLY_OK;
 	}
-    
-    purple_debug_info("QQ", "Receiving a captcha from the server...\n");
 
 	bytes += qq_get16(&png_len, data + bytes);
 
@@ -597,7 +594,8 @@ void qq_request_auth(PurpleConnection *gc)
 		qd->ld.keys[4][i] = (guint8) (rand() & 0xff);
 	bytes += qq_putdata(raw_data +bytes, qd->ld.keys[4], sizeof(qd->ld.keys[4]));
 
-	encrypted_len = qq_encrypt(encrypted, raw_data, bytes, qd->ld.pwd_twice_md5);
+//	encrypted_len = qq_encrypt(encrypted, raw_data, bytes, qd->ld.pwd_twice_md5);
+	encrypted_len = qq_encrypt(encrypted, raw_data, bytes, qd->ld.pwd_qq_md5);
 
 	/* create packet */
 	bytes = 0;
