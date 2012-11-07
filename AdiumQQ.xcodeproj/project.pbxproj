@@ -325,6 +325,7 @@
 				BEEF063D147DF61400BF67C5 /* Sources */,
 				BEEF063E147DF61400BF67C5 /* Frameworks */,
 				BEEF063F147DF61400BF67C5 /* Resources */,
+				BE5F7113164AF5AC00154AA7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -409,6 +410,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE5F7113164AF5AC00154AA7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/install_name_tool -change \"@executable_path/../Frameworks/libpurple.framework/Versions/0.10.5/libpurple\" \"@executable_path/../Frameworks/libpurple.framework/libpurple\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents/MacOS/$PRODUCT_NAME\"\n/usr/bin/install_name_tool -change \"@executable_path/../Frameworks/libglib.framework/Versions/2.0.0/libglib\" \"@executable_path/../Frameworks/libglib.framework/libglib\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents/MacOS/$PRODUCT_NAME\"\n/usr/bin/install_name_tool -change \"@executable_path/../Frameworks/libmeanwhile.framework/Versions/1/libmeanwhile\" \"@executable_path/../Frameworks/libmeanwhile.framework/libmeanwhile\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents/MacOS/$PRODUCT_NAME\"\n/usr/bin/install_name_tool -change \"@executable_path/../Frameworks/libintl.framework/Versions/8/libintl\" \"@executable_path/../Frameworks/libintl.framework/libintl\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents/MacOS/$PRODUCT_NAME\"\n/usr/bin/install_name_tool -change \"@executable_path/../Frameworks/libgmodule.framework/Versions/2.0.0/libgmodule\" \"@executable_path/../Frameworks/libgmodule.framework/libgmodule\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents/MacOS/$PRODUCT_NAME\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEEF063D147DF61400BF67C5 /* Sources */ = {
@@ -541,6 +558,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.9.1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -575,6 +593,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.9.1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
